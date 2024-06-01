@@ -26,8 +26,8 @@ return {
     event = {
       -- If you want to use the home shortcut '~' here you need to call 'vim.fn.expand'.
       -- E.g. "BufReadPre " .. vim.fn.expand "~" .. "/my-vault/**.md"
-      'BufReadPre ' .. vim.fn.expand '~/notes/**/*.md',
-      'BufNewFile ' .. vim.fn.expand '~/notes/**/*.md',
+      'BufReadPre ' .. vim.fn.expand '~/obsidian/CrispyJ/**/*.md',
+      'BufNewFile ' .. vim.fn.expand '~/obsidian/CrispyJ/**/*.md',
     },
     dependencies = {
       'nvim-lua/plenary.nvim',
@@ -49,8 +49,8 @@ return {
       require('obsidian').setup {
         workspaces = {
           {
-            name = 'notes',
-            path = '~/notes',
+            name = 'CrispyJ ',
+            path = '~/obsidian/CrispyJ',
           },
         },
         mappings = {
