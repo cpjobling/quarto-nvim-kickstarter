@@ -29,6 +29,7 @@ return {
           'mermaid',
           'norg',
           'typescript',
+          'matlab',
         },
         highlight = {
           enable = true,

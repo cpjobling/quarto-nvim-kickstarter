@@ -21,7 +21,7 @@ return {
 
   {
     'epwalsh/obsidian.nvim',
-    enabled = false,
+    enabled = true,
     ft = 'markdown',
     event = {
       -- If you want to use the home shortcut '~' here you need to call 'vim.fn.expand'.
@@ -74,6 +74,21 @@ return {
             end,
             opts = { buffer = true },
           },
+        },
+        templates = {
+          folder = 'templates',
+          date_format = '%Y-%m-%d-%a',
+          time_format = '%H:%M',
+        },
+        daily_notes = {
+          -- Optional, if you keep daily notes in a separate directory.
+          folder = 'journal/2024',
+          -- Optional, if you want to change the date format for the ID of daily notes.
+          date_format = '%Y-%m-%d %a',
+          -- Optional, if you want to change the date format of the default alias of daily notes.
+          alias_format = '%B %-d, %Y',
+          -- Optional, if you want to automatically insert a template from your template directory like 'daily.md'
+          template = 'daily_note.md',
         },
         -- Optional, customize how names/IDs for new notes are created.
         note_id_func = function(title)
